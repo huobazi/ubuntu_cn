@@ -1,6 +1,11 @@
-# ubuntu_cn
+# ubuntu_cn_source
 
+## Usage
 
-采用中国的Ubuntu镜像源替换原有的镜像源，加速apt的下载。
-
-镜像源列表文件是从官方Ubuntu系统中扒出来的，没有经过二次修改。
+```
+git clone https://github.com/huobazi/ubuntu_cn_source
+sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
+cd ubuntu_cn_source
+sudo cp sources.list /etc/apt/sources.list
+sudo apt-get update -y
+```
